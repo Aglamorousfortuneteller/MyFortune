@@ -1,5 +1,9 @@
 from app import app
 
+@app.route("/")
+def home():
+    return "Hello, Flask!"
+
 @app.route("/hello")
 def hello():
     return "Hello, world!"
