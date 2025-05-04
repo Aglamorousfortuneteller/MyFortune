@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funny Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1 class="funny-title">😄 Enter Your Details! 🦄</h1>
+    <form action="/submit" method="POST" class="funny-form">
+        <label>Your Super Cool Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Your Awesome Email:</label>
+        <input type="email" name="email" required><br><br>
+
+        <label>Your Favorite Color:</label>
+        <input type="color" name="color"><br><br>
+
+        <label>Your Profession:</label>
+        <select name="profession">
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+        </select><br><br>
+
+        <p>Your Hobbies:</p>
+        <label><input type="checkbox" name="hobbies" value="books"> 📚 Books</label>
+        <label><input type="checkbox" name="hobbies" value="sports"> 🏃 Sports</label>
+        <label><input type="checkbox" name="hobbies" value="games"> 🎮 Games</label><br><br>
+
+        <p>Your Level:</p>
+        <label><input type="radio" name="level" value="beginner"> 🐣 Beginner</label>
+        <label><input type="radio" name="level" value="advanced"> 🧠 Advanced</label><br><br>
+
+        <button type="submit" class="funny-button">🚀 Let's Go!</button>
+        <button type="button" class="funny-button" onclick="surprise()">🎉 Click Me!</button>
+        <p id="surprise-text"></p>
+    </form>
+
+    <script>
+        function surprise() {
+            document.getElementById("surprise-text").innerText = "🎊 You found the secret button!";
+        }
+    </script>
+</body>
+</html>

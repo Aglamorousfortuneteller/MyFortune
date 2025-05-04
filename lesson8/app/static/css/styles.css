@@ -1,0 +1,101 @@
+
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #fffb91;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.funny-title {
+    font-size: 3rem;
+    color: #ff69b4;
+    text-shadow: 3px 3px #ffa500;
+    margin-top: 20px;
+    animation: wobble 2s infinite;
+}
+
+
+@keyframes wobble {
+    0%, 100% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+}
+
+
+.funny-form {
+    margin: 50px auto;
+    padding: 20px;
+    width: 400px;
+    background-color: #ffe4e1;
+    border: 5px dashed #ff4500;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: rotate(-2deg);
+}
+
+
+.funny-form input[type="text"],
+.funny-form input[type="email"],
+.funny-form select {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ff1493;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    background-color: #fffaf0;
+}
+
+.funny-form input[type="color"] {
+    width: 160px;
+    height: 50px;
+    margin: 10px 0;
+    border-radius: 12px;
+    border: 2px solid #ff1493;
+    background-color: #fffaf0;
+    cursor: pointer;
+}
+
+
+
+.funny-form input:hover,
+.funny-form select:hover {
+    background-color: #ffd700;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+
+.funny-button {
+    background-color: #ff4500;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: 10px;
+    animation: bounce 1s infinite;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.funny-button:hover {
+    background-color: #ff6347;
+    transform: scale(1.2);
+    transition: 0.3s ease;
+}
+
+
+.funny-form input[type="checkbox"],
+.funny-form input[type="radio"] {
+    transform: scale(1.3);
+    margin-right: 5px;
+    accent-color: #ff69b4;
+}

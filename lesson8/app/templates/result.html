@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submission Result</title>
+</head>
+<body>
+    <h1>Thank You, {{ name }}!</h1>
+    <p>Email: {{ email }}</p>
+    <p>Your favorite color is: <span style="color: {{ color }}">{{ color }}</span>.</p>
+    <p>Your profession: {{ profession }}</p>
+    <p>Your hobbies: {{ hobbies | join(', ') }}</p>
+    <p>Your level: {{ level }}</p>
+    <a href="/">Go back</a>
+</body>
+</html>
